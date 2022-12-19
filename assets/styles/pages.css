@@ -294,7 +294,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -702,6 +702,7 @@ textarea:-ms-input-placeholder {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .send-request-icon {
@@ -785,7 +786,9 @@ ul {
 
 .premium-page {
     margin-top: 6rem;
+    margin-bottom: 6rem;
 }
+
 .premium-page .header {
     font-weight: 700;
     font-size: 3rem;

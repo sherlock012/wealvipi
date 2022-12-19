@@ -190,6 +190,10 @@ $(document).ready(function () {
         duration: 900,
     })
 
+    $(".call-us").click(function () {
+        window.open("tel:+7 777 384 01 25", "_self")
+    })
+
     var currentSlideIndex = 0
     var profiles = $("#profiles").children()
 
