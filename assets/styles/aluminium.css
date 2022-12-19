@@ -1,0 +1,15 @@
+:root {
+    --main: #ffc327;
+}
+
+.calculate-windows {
+    background: no-repeat center center url("../images/aluminium/calculate-windows.jpg");
+}
+.calculate-doors {
+    background: no-repeat center center url("../images/aluminium/calculate-doors.jpg");
+    background-position: left !important;
+}
+.calculate-parallel {
+    background: no-repeat center center url("../images/aluminium/calculate-parallel.jpg");
+    background-position: left !important;
+}

@@ -1,0 +1,88 @@
+@media screen and (max-width: 830px) {
+    body,
+    html {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .contacts-wrapper {
+        max-width: 12.8125rem;
+        width: 12.8125rem;
+    }
+
+    .contacts .phone {
+        font-size: 1rem !important;
+    }
+
+    .contacts .whatsapp-icon,
+    .contacts .phone .icon {
+        background-size: cover;
+    }
+
+    .main-container .right,
+    .main-container .left {
+        width: 100%;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .main-container .right-content,
+    .main-container .left-content {
+        width: 100%;
+        display: flex !important;
+    }
+
+    .socials .icon {
+        background-size: cover;
+    }
+
+    .center-line {
+        transform: rotate(90deg);
+    }
+
+    .contacts-addon {
+        width: 12.8125rem;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .mobile-background {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile-background > .wood {
+        height: 50vh;
+        background-image: linear-gradient(180deg, rgba(22, 9, 11, 0.5) 30.44%, rgba(204, 98, 0, 0.5) 100%),
+            url("../images/wood/main.png");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobile-background > .aluminium {
+        height: 50vh;
+        background: linear-gradient(180deg, rgba(22, 9, 11, 0.5) 30.44%, rgba(204, 98, 0, 0.5) 100%),
+            url("../images/aluminium/main.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page-wrapper {
+        background: none;
+    }
+}

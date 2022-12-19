@@ -1,0 +1,13 @@
+:root {
+    --main: #e76f00;
+}
+
+.calculate-windows {
+    background: no-repeat center center url("../images/wood/calculate-windows.jpeg");
+}
+.calculate-doors {
+    background: no-repeat center center url("../images/wood/calculate-doors.jpeg");
+}
+.calculate-parallel {
+    background: no-repeat center center url("../images/wood/calculate-parallel.jpeg");
+}

@@ -1,0 +1,219 @@
+@media screen and (max-width: 830px) {
+    body,
+    html {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .calculate-page .content {
+        flex-direction: column;
+    }
+
+    .content .content-right {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .calculate-block {
+        align-items: center;
+    }
+
+    .calculate-figure {
+        width: 100%;
+        height: 300px;
+    }
+
+    .calculate-btn {
+        margin-top: 2rem;
+    }
+
+    .calculate-block-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .classification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calculate-page .header .underline {
+        width: 200px;
+    }
+
+    .banner {
+        height: 130px;
+    }
+
+    .advantage-grid--item {
+        height: 180px;
+    }
+
+    .leave-request {
+        flex-direction: column;
+    }
+
+    .leave-request--right,
+    .leave-request--left {
+        width: 100%;
+    }
+
+    .leave-request--left {
+        height: 250px;
+    }
+
+    .leave-request--left .figure {
+        background-size: cover;
+    }
+    .company-row {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .statistic-row {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .statistic-row .square {
+        margin-left: 0px;
+    }
+
+    .statistic-row .age-caption,
+    .statistic-row .square-caption {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .branded-text {
+        text-align: center;
+    }
+
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-us--map {
+        width: 100%;
+        height: 350px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .mobile-navigator-popup {
+        display: block;
+        position: unset;
+        margin-top: 2rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .popup-close-btn {
+        display: none;
+    }
+
+    .premium-page-content {
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .premium-page--description {
+        position: unset;
+    }
+    .premium-page--picture {
+        width: 100%;
+        height: 400px;
+    }
+
+    .premium-page--navigator {
+        display: none;
+    }
+
+    .navigation .contacts .icon {
+        background-size: contain;
+    }
+
+    .reviews {
+        margin-top: 2rem;
+    }
+
+    .main-page-navigator {
+        display: none;
+    }
+
+    .advantage-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .highlight-line {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.3rem 0;
+    }
+
+    .calculate-block--form-grid {
+        width: 100%;
+    }
+
+    .classification-page .header > header {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 2.1rem;
+    }
+
+    .footer--logo {
+        margin-top: 0px;
+    }
+
+    .contact-us-page {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .contacts-addon {
+        top: 60px;
+    }
+
+    .calculate-block--form-grid input[type="text"] {
+        font-size: 1rem;
+    }
+
+    .employee-data {
+        font-size: 1.4rem;
+        padding: 1.5rem;
+    }
+
+    .premium-arrows-caption {
+        min-width: 256px !important;
+    }
+
+    .projects .slider-projects {
+        height: 300px;
+    }
+
+    .slider-projects .project {
+        height: 300px;
+    }
+
+    .advantage-page .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculate-page .header {
+        text-align: center;
+    }
+
+    .description > .caption {
+        padding: 0 1rem;
+    }
+}

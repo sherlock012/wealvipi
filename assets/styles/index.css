@@ -1,0 +1,208 @@
+:root {
+    --main: #e76f00;
+    --white: #ffffff;
+    --black: #1e1d1d;
+}
+
+#wpadminbar {
+    display: none;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+.main-wrapper {
+    background-image: url("../images/background.png");
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, rgba(22, 9, 11, 0.5) 73.44%, rgba(204, 98, 0, 0.5) 100%);
+}
+
+.container {
+    width: 1200px;
+}
+
+.container--bottom {
+    position: absolute;
+    bottom: 3rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 12rem;
+    height: 4rem;
+    background: no-repeat center url(../images/logo/logo1.svg);
+    background-size: contain;
+    margin-top: 1rem;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    width: 15rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 2.188rem;
+    align-items: center;
+    position: relative;
+}
+
+.contacts .whatsapp-icon {
+    display: flex;
+    flex-direction: row;
+    width: 1.625rem;
+    height: 1.625rem;
+    background: no-repeat center url("../images/whatsapp.svg");
+}
+.contacts .phone {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    align-items: center;
+    font-size: 1.25rem;
+    width: 100%;
+    background-color: var(--black);
+    padding: 0.625rem 1.25rem;
+    border-radius: 3px;
+}
+.contacts .phone .icon {
+    width: 1.625rem;
+    height: 1.625rem;
+    background: no-repeat center url("../images/phone.svg");
+}
+.contacts .phone a {
+    color: #fff;
+    text-decoration: none;
+}
+.contacts-addon {
+    flex-direction: column;
+    width: 240px;
+    position: absolute;
+    margin-top: 65px;
+    z-index: 1;
+    gap: 1.2rem;
+    background-color: var(--black);
+    padding: 1.2rem 0;
+    border-radius: 3px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    justify-content: flex-end;
+}
+.socials .icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.socials .vk {
+    background-image: url("../images/vk.svg");
+}
+.socials .telegram {
+    background-image: url("../images/telegram.svg");
+}
+.socials .instagram {
+    background-image: url("../images/instagram.svg");
+}
+.socials .youtube {
+    background-image: url("../images/youtube.svg");
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.center-line {
+    position: absolute;
+    border: 0.5px solid #fff;
+    height: 100vh;
+    z-index: 2;
+}
+.main-container .header {
+    font: 700 2.375rem "Fira Sans";
+    color: #fff;
+    text-transform: uppercase;
+}
+.main-container .caption {
+    font: 400 1.375rem "Montserrat";
+    line-height: 2.3125rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    margin-top: 2.9375rem;
+    text-transform: uppercase;
+}
+.main-container .line {
+    width: 6.0625rem;
+    border: 0.25rem solid var(--main);
+    margin-top: 2.6875rem;
+}
+.main-container .main-button {
+    background-color: var(--main);
+    padding: 1.25rem 1.875rem;
+    font: 700 1.125rem Montserrat, sans-serif;
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 4.0625rem;
+}
+.main-container .right,
+.main-container .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.main-container .right-content,
+.main-container .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
