@@ -68,9 +68,6 @@ $socials = allvipi_get_fields('socials');
                     </div>
 
                     <div class="socials">
-                        <!-- <div class="icon instagram"></div>
-                        <div class="icon telegram"></div>
-                        <div class="icon youtube"></div> -->
                         <?php foreach ($socials as $social) : ?>
                             <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
                         <?php endforeach; ?>
@@ -113,14 +110,6 @@ $socials = allvipi_get_fields('socials');
 
                 <button class="btn" onclick="showModal()">Оставить заявку</button>
             </section>
-
-            <!-- <section class="container container--bottom">
-                <div class="socials">
-                    <div class="icon instagram"></div>
-                    <div class="icon vk"></div>
-                    <div class="icon telegram"></div>
-                </div>
-            </section> -->
 
             <div class="full-container highlight-line">
                 Закажите окна с декабря по январь &nbsp;<b>и получите дополнительную скидку 10%</b>
@@ -507,9 +496,9 @@ $socials = allvipi_get_fields('socials');
 
                     <div class="our-address-socials">
                         <div class="socials">
-                            <div class="icon instagram"></div>
-                            <div class="icon telegram"></div>
-                            <div class="icon youtube"></div>
+                            <?php foreach ($socials as $social) : ?>
+                                <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                     <div class="call-us">
@@ -564,9 +553,6 @@ $socials = allvipi_get_fields('socials');
             <div class="container footer-copyright">
                 2023 © Все права защищены
                 <div class="socials">
-                    <!-- <div class="icon instagram"></div>
-                    <div class="icon telegram"></div>
-                    <div class="icon youtube"></div> -->
                     <?php foreach ($socials as $social) : ?>
                         <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
                     <?php endforeach; ?>
