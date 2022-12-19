@@ -556,7 +556,7 @@ $employees = allvipi_get_fields('employees');
             </div>
 
             <div class="container footer-copyright">
-                2022 © Все права защищены
+                2023 © Все права защищены
                 <div class="socials">
                     <div class="icon instagram"></div>
                     <div class="icon telegram"></div>
