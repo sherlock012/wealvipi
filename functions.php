@@ -277,6 +277,33 @@ function register_post_types()
         'taxonomies'          => array(),
         // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
     ));
+
+    register_post_type('socials', array(
+        'label'  => null,
+        'labels' => array(
+            'name'               => 'Соц сети', // основное название для типа записи
+            'singular_name'      => 'socials', // название для одной записи этого типа
+            'add_new'            => 'Добавить Соц сети', // для добавления новой записи
+            'add_new_item'       => 'Добавление Соц сети', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование Соц сети', // для редактирования типа записи
+            'new_item'           => 'Новый Соц сети', // текст новой записи
+            'view_item'          => 'Смотреть Соц сети', // для просмотра записи этого типа.
+            'search_items'       => 'Искать Соц сети', // для поиска по этим типам записи
+            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+            'parent_item_colon'  => '', // для родителей (у древовидных типов)
+            'menu_name'          => 'Соц сети ', // название меню
+        ),
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'show_ui'             => true, // зависит от public
+        'menu_position'       => null,
+        'menu_icon'           => 'dashicons-networking',
+        'hierarchical'        => false,
+        'supports'            => array('title', 'thumbnail', 'editor',),
+        'taxonomies'          => array(),
+        // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    ));
 }
 
 

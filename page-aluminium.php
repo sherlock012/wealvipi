@@ -8,6 +8,8 @@ $projects = allvipi_get_fields('aluminium-projects');
 $profiles = allvipi_get_fields('profiles');
 
 $employees = allvipi_get_fields('employees');
+
+$socials = allvipi_get_fields('socials');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,10 +66,16 @@ $employees = allvipi_get_fields('employees');
                         <a href="tel:+7 771 718 46 75">+7 771 718 46 75</a>
                     </div>
 
-                    <div class="socials">
+                    <!-- <div class="socials">
                         <div class="icon instagram"></div>
                         <div class="icon telegram"></div>
                         <div class="icon youtube"></div>
+                    </div> -->
+
+                    <div class="socials">
+                        <?php foreach ($socials as $social) : ?>
+                            <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </nav>
@@ -501,9 +509,12 @@ $employees = allvipi_get_fields('employees');
 
                     <div class="our-address-socials">
                         <div class="socials">
-                            <div class="icon instagram"></div>
+                            <!-- <div class="icon instagram"></div>
                             <div class="icon telegram"></div>
-                            <div class="icon youtube"></div>
+                            <div class="icon youtube"></div> -->
+                            <?php foreach ($socials as $social) : ?>
+                                <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                     <div class="call-us">

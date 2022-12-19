@@ -1,6 +1,10 @@
 </body>
 
 <script>
+    function openSocial(url) {
+        window.open(url, "_blank");
+    }
+
     $(document).ready(function() {
         $(".bg-video").bgVideo()
         $(".bg-video_2").bgVideo()

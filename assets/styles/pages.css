@@ -852,11 +852,11 @@ ul {
 }
 .third-navigator {
     left: -15%;
-    bottom: 5%;
+    bottom: 10%;
 }
 .forth-navigator {
-    right: 0;
-    bottom: 5%;
+    right: -15%;
+    bottom: 25%;
 }
 
 .navigator-popup,
@@ -907,8 +907,8 @@ ul {
 }
 
 .forth-popup {
-    right: 0;
-    bottom: 5%;
+    right: -5%;
+    bottom: 15%;
     display: none;
 }
 

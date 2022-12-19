@@ -8,6 +8,8 @@ $projects = allvipi_get_fields('wood-projects');
 $profiles = allvipi_get_fields('profiles');
 
 $employees = allvipi_get_fields('employees');
+
+$socials = allvipi_get_fields('socials');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,9 +68,12 @@ $employees = allvipi_get_fields('employees');
                     </div>
 
                     <div class="socials">
-                        <div class="icon instagram"></div>
+                        <!-- <div class="icon instagram"></div>
                         <div class="icon telegram"></div>
-                        <div class="icon youtube"></div>
+                        <div class="icon youtube"></div> -->
+                        <?php foreach ($socials as $social) : ?>
+                            <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </nav>
@@ -559,9 +564,12 @@ $employees = allvipi_get_fields('employees');
             <div class="container footer-copyright">
                 2023 © Все права защищены
                 <div class="socials">
-                    <div class="icon instagram"></div>
+                    <!-- <div class="icon instagram"></div>
                     <div class="icon telegram"></div>
-                    <div class="icon youtube"></div>
+                    <div class="icon youtube"></div> -->
+                    <?php foreach ($socials as $social) : ?>
+                        <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </footer>

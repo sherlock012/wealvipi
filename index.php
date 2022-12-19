@@ -1,5 +1,6 @@
 <?php
 get_header();
+$socials = allvipi_get_fields('socials');
 
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 
@@ -42,10 +43,15 @@ else
                         <a href="tel:+7 771 718 46 75">+7 771 718 46 75</a>
                     </div>
 
+                    <!-- <div class="socials">
+                            <div class="icon instagram"></div>
+                            <div class="icon telegram"></div>
+                            <div class="icon youtube"></div>
+                        </div> -->
                     <div class="socials">
-                        <div class="icon instagram"></div>
-                        <div class="icon telegram"></div>
-                        <div class="icon youtube"></div>
+                        <?php foreach ($socials as $social) : ?>
+                            <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>

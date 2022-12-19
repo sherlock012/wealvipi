@@ -44,6 +44,10 @@ function showProjectDesctiption(index) {
     $(`[name="project-hide-${index}"]`).css("display", "none")
 }
 
+function openSocial(url) {
+    window.open(url, "_blank")
+}
+
 $(document).ready(function () {
     $("#toMainPage").click(function () {
         $("body").scrollTo("#main-page", 800)
