@@ -35,6 +35,8 @@ function calculate() {
     }
 
     $("#calculate-total-price").html(total.toLocaleString() + " KZT")
+
+    counterAnim("#calculate-total-price", 0, total)
     $("#calculateWidth, #calculateHeight").removeClass("is-empty-input")
 }
 
@@ -46,6 +48,20 @@ function showProjectDesctiption(index) {
 
 function openSocial(url) {
     window.open(url, "_blank")
+}
+
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+    const target = document.querySelector(qSelector)
+    let startTimestamp = null
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1)
+        target.innerText = Math.floor(progress * (end - start) + start)
+        if (progress < 1) {
+            window.requestAnimationFrame(step)
+        }
+    }
+    window.requestAnimationFrame(step)
 }
 
 $(document).ready(function () {

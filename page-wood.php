@@ -79,18 +79,18 @@ $socials = allvipi_get_fields('socials');
             <div class="main-page-navigator main-page-navigator--second">+</div>
 
             <div class="main-page-small-block first-block">
-                <section class="popup-close-btn">x</section>
+                <!-- <section class="popup-close-btn">x</section> -->
                 <div>Входные двери WEALVIPI обеспечат высокий уровень безопасности и защиты от теплопотерь.</div>
-                <div onclick="showModal()">Хочу также</div>
+                <!-- <div onclick="showModal()">Хочу также</div> -->
             </div>
 
             <div class="main-page-small-block second-block">
-                <section class="popup-close-btn">x</section>
+                <!-- <section class="popup-close-btn">x</section> -->
                 <div>
                     Раздвижные системы WEALVIPI с повышенной теплоизоляцией помогают наполнить помещения дневным светом и
                     объединить жилое пространство и окружающий ландшафт.
                 </div>
-                <div onclick="showModal()">Хочу также</div>
+                <!-- <div onclick="showModal()">Хочу также</div> -->
             </div>
 
             <section class="container mid-content animate__animated animate__fadeInLeft">
@@ -398,7 +398,7 @@ $socials = allvipi_get_fields('socials');
                     <div class="calculate-total">
                         <div class="calculate-total--item">
                             <div class="__total">Итого:</div>
-                            <div id="calculate-total-price" class="__price">0 KZT</div>
+                            <div id="calculate-total-price" class="__price">0</div>
                         </div>
                         <div class="calculate-total--item">
                             <div class="__total">Доставка:</div>

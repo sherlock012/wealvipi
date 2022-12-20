@@ -4,6 +4,14 @@
     overflow-x: hidden;
 }
 
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 @font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
@@ -370,6 +378,10 @@ main {
 
 .__price {
     font-size: 1.5rem;
+}
+
+.__price::after {
+    content: " KZT";
 }
 
 .calculate-block {
@@ -1310,7 +1322,13 @@ ul {
     justify-content: center;
     flex-direction: column;
     /* gap: 2.5rem; */
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.modal--form + p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal-content-label {
@@ -1349,7 +1367,7 @@ ul {
 }
 
 .modal-button {
-    margin-top: 1.875rem;
+    /* margin-top: 1.875rem; */
     padding: 1rem 1.1rem;
 }
 
@@ -1388,7 +1406,7 @@ input[type="checkbox"] {
 
 .wpcf7-form-control-wrap {
     display: block;
-    margin-bottom: 1.75rem;
+    /* margin-bottom: 1.75rem; */
 }
 
 .wpcf7-not-valid-tip {
