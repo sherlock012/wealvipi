@@ -61,32 +61,32 @@ function register_post_types()
 {
     add_theme_support('post-thumbnails');
 
-    register_post_type('reviews', array(
-        'label'  => null,
-        'labels' => array(
-            'name'               => 'Отзывы', // основное название для типа записи
-            'singular_name'      => 'reviews', // название для одной записи этого типа
-            'add_new'            => 'Добавить Отзывы', // для добавления новой записи
-            'add_new_item'       => 'Добавление Отзывы', // заголовка у вновь создаваемой записи в админ-панели.
-            'edit_item'          => 'Редактирование Отзывы', // для редактирования типа записи
-            'new_item'           => 'Новый Отзывы', // текст новой записи
-            'view_item'          => 'Смотреть Отзывы', // для просмотра записи этого типа.
-            'search_items'       => 'Искать Отзывы', // для поиска по этим типам записи
-            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-            'parent_item_colon'  => '', // для родителей (у древовидных типов)
-            'menu_name'          => 'Отзывы ', // название меню
-        ),
-        'public'              => true,
-        'publicly_queryable'  => true,
-        'show_ui'             => true, // зависит от public
-        'menu_position'       => null,
-        'menu_icon'           => 'dashicons-products',
-        'hierarchical'        => false,
-        'supports'            => array('title', 'thumbnail', 'editor',),
-        'taxonomies'          => array(),
-        // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
-    ));
+    // register_post_type('reviews', array(
+    //     'label'  => null,
+    //     'labels' => array(
+    //         'name'               => 'Отзывы', // основное название для типа записи
+    //         'singular_name'      => 'reviews', // название для одной записи этого типа
+    //         'add_new'            => 'Добавить Отзывы', // для добавления новой записи
+    //         'add_new_item'       => 'Добавление Отзывы', // заголовка у вновь создаваемой записи в админ-панели.
+    //         'edit_item'          => 'Редактирование Отзывы', // для редактирования типа записи
+    //         'new_item'           => 'Новый Отзывы', // текст новой записи
+    //         'view_item'          => 'Смотреть Отзывы', // для просмотра записи этого типа.
+    //         'search_items'       => 'Искать Отзывы', // для поиска по этим типам записи
+    //         'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+    //         'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+    //         'parent_item_colon'  => '', // для родителей (у древовидных типов)
+    //         'menu_name'          => 'Отзывы ', // название меню
+    //     ),
+    //     'public'              => true,
+    //     'publicly_queryable'  => true,
+    //     'show_ui'             => true, // зависит от public
+    //     'menu_position'       => null,
+    //     'menu_icon'           => 'dashicons-products',
+    //     'hierarchical'        => false,
+    //     'supports'            => array('title', 'thumbnail', 'editor',),
+    //     'taxonomies'          => array(),
+    //     // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    // ));
 
     register_post_type('wood-windows', array(
         'label'  => null,
@@ -254,18 +254,72 @@ function register_post_types()
     register_post_type('employees', array(
         'label'  => null,
         'labels' => array(
-            'name'               => 'Сотрудики', // основное название для типа записи
+            'name'               => 'Сотрудники', // основное название для типа записи
             'singular_name'      => 'employees', // название для одной записи этого типа
-            'add_new'            => 'Добавить Сотрудики', // для добавления новой записи
-            'add_new_item'       => 'Добавление Сотрудики', // заголовка у вновь создаваемой записи в админ-панели.
-            'edit_item'          => 'Редактирование Сотрудики', // для редактирования типа записи
-            'new_item'           => 'Новый Сотрудики', // текст новой записи
-            'view_item'          => 'Смотреть Сотрудики', // для просмотра записи этого типа.
-            'search_items'       => 'Искать Сотрудики', // для поиска по этим типам записи
+            'add_new'            => 'Добавить Сотрудники', // для добавления новой записи
+            'add_new_item'       => 'Добавление Сотрудники', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование Сотрудники', // для редактирования типа записи
+            'new_item'           => 'Новый Сотрудники', // текст новой записи
+            'view_item'          => 'Смотреть Сотрудники', // для просмотра записи этого типа.
+            'search_items'       => 'Искать Сотрудники', // для поиска по этим типам записи
             'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
             'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
             'parent_item_colon'  => '', // для родителей (у древовидных типов)
-            'menu_name'          => 'Сотрудики ', // название меню
+            'menu_name'          => 'Сотрудники ', // название меню
+        ),
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'show_ui'             => true, // зависит от public
+        'menu_position'       => null,
+        'menu_icon'           => 'dashicons-open-folder',
+        'hierarchical'        => false,
+        'supports'            => array('title', 'thumbnail', 'editor',),
+        'taxonomies'          => array(),
+        // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    ));
+
+    register_post_type('profiles', array(
+        'label'  => null,
+        'labels' => array(
+            'name'               => 'Профили дерево', // основное название для типа записи
+            'singular_name'      => 'profiles', // название для одной записи этого типа
+            'add_new'            => 'Добавить Профили дерево', // для добавления новой записи
+            'add_new_item'       => 'Добавление Профили дерево', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование Профили дерево', // для редактирования типа записи
+            'new_item'           => 'Новый Профили дерево', // текст новой записи
+            'view_item'          => 'Смотреть Профили дерево', // для просмотра записи этого типа.
+            'search_items'       => 'Искать Профили дерево', // для поиска по этим типам записи
+            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+            'parent_item_colon'  => '', // для родителей (у древовидных типов)
+            'menu_name'          => 'Профили дерево ', // название меню
+        ),
+        'public'              => true,
+        'publicly_queryable'  => true,
+        'show_ui'             => true, // зависит от public
+        'menu_position'       => null,
+        'menu_icon'           => 'dashicons-open-folder',
+        'hierarchical'        => false,
+        'supports'            => array('title', 'thumbnail', 'editor',),
+        'taxonomies'          => array(),
+        // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    ));
+
+    register_post_type('profiles-aluminium', array(
+        'label'  => null,
+        'labels' => array(
+            'name'               => 'Профили алюминий', // основное название для типа записи
+            'singular_name'      => 'profiles-aluminium', // название для одной записи этого типа
+            'add_new'            => 'Добавить Профили алюминий', // для добавления новой записи
+            'add_new_item'       => 'Добавление Профили алюминий', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование Профили алюминий', // для редактирования типа записи
+            'new_item'           => 'Новый Профили алюминий', // текст новой записи
+            'view_item'          => 'Смотреть Профили алюминий', // для просмотра записи этого типа.
+            'search_items'       => 'Искать Профили алюминий', // для поиска по этим типам записи
+            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+            'parent_item_colon'  => '', // для родителей (у древовидных типов)
+            'menu_name'          => 'Профили алюминий ', // название меню
         ),
         'public'              => true,
         'publicly_queryable'  => true,

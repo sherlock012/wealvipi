@@ -180,7 +180,7 @@ $socials = allvipi_get_fields('socials');
 
         <div class="full-container banner banner-wood"></div>
 
-        <div class="default-page advantage-page" id="forth-page">
+        <div class="default-page advantage-page" data-aos="fade-in" id="forth-page">
             <div class="container header">преимущества &nbsp;<span class="branded-text">ALVIPI</span></div>
 
             <div class="container advantage-grid">
@@ -256,7 +256,7 @@ $socials = allvipi_get_fields('socials');
             <!-- <div class="full-container highlight-line">Корпоративным клиентам</div> -->
         </div>
 
-        <div class="default-page premium-page" id="forth-page">
+        <div class="default-page premium-page" data-aos="fade-in" id="forth-page">
             <div class="container header">Premium<br />дерево-аллюминий</div>
             <div class="container">
                 <div class="premium-page-content">
@@ -451,7 +451,7 @@ $socials = allvipi_get_fields('socials');
             </div>
         </div>
 
-        <div class="default-page client-reviews-page">
+        <div class="default-page client-reviews-page" data-aos="fade-in">
             <div class="container header">Наша <br /><span class="branded-text">команда</span></div>
 
             <div class="container">

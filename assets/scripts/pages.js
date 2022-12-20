@@ -88,6 +88,14 @@ $(document).ready(function () {
         $(".second-block").fadeIn()
     })
 
+    $(".main-page-navigator--first").mouseout(function () {
+        $(".first-block").fadeOut()
+    })
+
+    $(".main-page-navigator--second").mouseout(function () {
+        $(".second-block").fadeOut()
+    })
+
     $(".first-navigator").mouseover(function () {
         $(".first-popup").fadeIn()
     })
@@ -133,10 +141,12 @@ $(document).ready(function () {
 
     $("#contacts").mouseover(function () {
         $(".contacts-addon").css("opacity", "1")
+        $(".contacts-addon").css("visibility", "unset")
     })
 
     $(document).click(function () {
         $(".contacts-addon").css("opacity", "0")
+        $(".contacts-addon").css("visibility", "hidden")
     })
 
     $(".employees").slick({
@@ -185,9 +195,10 @@ $(document).ready(function () {
     })
 
     AOS.init({
-        offset: 150,
+        offset: 10,
         delay: 50,
-        duration: 900,
+        duration: 800,
+        once: true,
     })
 
     $(".call-us").click(function () {

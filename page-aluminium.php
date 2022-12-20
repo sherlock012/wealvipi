@@ -5,7 +5,7 @@ $doors = allvipi_get_fields('aluminium-doors');
 
 $projects = allvipi_get_fields('aluminium-projects');
 
-$profiles = allvipi_get_fields('profiles');
+$profiles = allvipi_get_fields('profiles-aluminium');
 
 $employees = allvipi_get_fields('employees');
 
@@ -179,7 +179,7 @@ $socials = allvipi_get_fields('socials');
 
         <div class="full-container banner"></div>
 
-        <div class="default-page advantage-page" id="forth-page">
+        <div class="default-page advantage-page" data-aos="fade-in" id="forth-page">
             <div class="container header">преимущества &nbsp;<span class="branded-text">ALVIPI</span></div>
 
             <div class="container advantage-grid">
@@ -255,7 +255,7 @@ $socials = allvipi_get_fields('socials');
             <!-- <div class="full-container highlight-line">Корпоративным клиентам</div> -->
         </div>
 
-        <div class="default-page premium-page">
+        <div class="default-page premium-page" data-aos="fade-in">
             <div class="container header">Premium<br />аллюминий</div>
             <div class="container">
                 <div class="premium-page-content">
@@ -450,7 +450,7 @@ $socials = allvipi_get_fields('socials');
             </div>
         </div>
 
-        <div class="default-page client-reviews-page">
+        <div class="default-page client-reviews-page" data-aos="fade-in">
             <div class="container header">Наша <br /><span class="branded-text">команда</span></div>
 
             <div class="container">
@@ -474,7 +474,7 @@ $socials = allvipi_get_fields('socials');
             </div>
         </div>
 
-        <div class="default-page contact-us-page">
+        <div class="default-page contact-us-page" data-aos="fade-in">
             <div class="container">
                 <div class="header">свяжитесь с нами</div>
             </div>

@@ -119,6 +119,7 @@ body {
     padding: 1.2rem 0;
     border-radius: 3px;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.5s ease-in;
 }
 .socials {

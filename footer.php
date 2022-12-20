@@ -37,10 +37,12 @@
 
         $("#contacts").mouseover(function() {
             $(".contacts-addon").css("opacity", "1")
+            $(".contacts-addon").css("visibility", "unset")
         })
 
         $(document).click(function() {
             $(".contacts-addon").css("opacity", "0")
+            $(".contacts-addon").css("visibility", "hidden")
         })
     })
 </script>

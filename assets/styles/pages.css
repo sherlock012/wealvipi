@@ -1,6 +1,7 @@
 :root {
     --white: #ffffff;
     --black: #1e1d1d;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -72,6 +73,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
+    margin-bottom: 2rem;
 }
 
 .main-wood {
@@ -501,7 +503,7 @@ textarea:-ms-input-placeholder {
     display: flex;
     justify-content: space-between;
     color: var(--white);
-    margin-top: 9.625rem;
+    margin-top: 5.625rem;
 }
 
 .classification-grid {
@@ -1433,7 +1435,7 @@ input[type="checkbox"] {
     flex-direction: column;
     gap: 1.375rem;
     background: rgba(0, 0, 0, 0.4);
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1.25rem 0.9rem;
     color: var(--white);
     min-height: 135px;
@@ -1454,6 +1456,7 @@ input[type="checkbox"] {
     top: 110px;
     opacity: 0;
     transition: all 0.5s ease-in;
+    visibility: hidden;
 }
 
 .contacts-addon > .inner {

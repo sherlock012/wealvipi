@@ -216,4 +216,8 @@
     .description > .caption {
         padding: 0 1rem;
     }
+
+    .employee-data {
+        justify-content: center;
+    }
 }

@@ -2,6 +2,16 @@
     --main: #ffc327;
 }
 
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("../images/aluminium/calculate-windows.jpg") url("../images/aluminium/calculate-doors.jpg")
+        url("../images/aluminium/calculate-parallel.jpg");
+}
+
 .calculate-windows {
     background: no-repeat center center url("../images/aluminium/calculate-windows.jpg");
 }
@@ -12,4 +22,16 @@
 .calculate-parallel {
     background: no-repeat center center url("../images/aluminium/calculate-parallel.jpg");
     background-position: left !important;
+}
+
+.premium-arrows {
+    margin-top: 1.5rem;
+}
+
+.first-navigator {
+    right: -8%;
+}
+
+.first-popup {
+    right: -5%;
 }

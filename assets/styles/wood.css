@@ -2,6 +2,16 @@
     --main: #e76f00;
 }
 
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("../images/wood/calculate-windows.jpeg") url("../images/wood/calculate-doors.jpeg")
+        url("../images/wood/calculate-parallel.jpeg");
+}
+
 .calculate-windows {
     background: no-repeat center center url("../images/wood/calculate-windows.jpeg");
 }
