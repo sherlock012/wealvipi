@@ -63,6 +63,14 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
     }
     window.requestAnimationFrame(step)
 }
+$(".statistic-row").waypoint({
+    handler: function (direction) {
+        counterAnim("#age", 0, 6, 1000)
+        counterAnim("#square", 0, 25000, 2000)
+        this.destroy()
+    },
+    offset: "100%",
+})
 
 $(document).ready(function () {
     $("#toMainPage").click(function () {
@@ -211,10 +219,9 @@ $(document).ready(function () {
     })
 
     AOS.init({
-        offset: 10,
+        offset: 100,
         delay: 50,
         duration: 800,
-        once: true,
     })
 
     $(".call-us").click(function () {

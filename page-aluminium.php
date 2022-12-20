@@ -168,9 +168,9 @@ $socials = allvipi_get_fields('socials');
                 </div>
                 <div class="statistic-row-wrapper">
                     <div class="statistic-row">
-                        <div class="age">6</div>
+                        <div class="age" id="age">6</div>
                         <div class="age-caption">ЛЕТ на рынке<br />Казахстана</div>
-                        <div class="square">25000 м<span class="square-2">2</span></div>
+                        <div class="square"><span id="square">25000</span> м<span class="square-2">2</span></div>
                         <div class="square-caption">остекления<br />частных домов, вилл, коттеджей</div>
                     </div>
                 </div>
@@ -344,7 +344,7 @@ $socials = allvipi_get_fields('socials');
             </div>
         </div>
 
-        <div class="default-page calculate-page" id="fifth-page">
+        <div class="default-page calculate-page" data-aos="fade-in" id="fifth-page">
             <div class="container header">
                 Расчитайте остекление под свой дом
                 <div class="underline"></div>
@@ -586,6 +586,7 @@ $socials = allvipi_get_fields('socials');
     <script src="<?= get_template_directory_uri() ?>/assets/scripts/slick.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/assets/scripts/jquery.scrollTo.min.js"></script>
     <script src="<?= get_template_directory_uri() ?>/assets/scripts/aos.js"></script>
+    <script src="<?= get_template_directory_uri() ?>/assets/scripts/jquery.waypoints.min.js"></script>
     <?php do_action('add_aluminium_scripts') ?>
     <?php wp_footer() ?>
 </body>
