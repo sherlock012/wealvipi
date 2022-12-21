@@ -840,10 +840,10 @@ ul {
 }
 
 .premium-page--picture-wood {
-    background: no-repeat center center url("../images/picture-premium-wood.svg");
+    background: no-repeat center center;
 }
 .premium-page--picture-aluminium {
-    background: no-repeat center center url("../images/picture-premium.svg");
+    background: no-repeat center center;
 }
 
 .premium-page--navigator {
@@ -865,7 +865,7 @@ ul {
     right: 0;
 }
 .second-navigator {
-    top: 40%;
+    top: 35%;
     left: -10%;
 }
 .third-navigator {
@@ -913,7 +913,7 @@ ul {
 }
 
 .second-popup {
-    top: 20%;
+    top: 25%;
     left: -5%;
     display: none;
 }

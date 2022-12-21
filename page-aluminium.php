@@ -265,14 +265,22 @@ $socials = allvipi_get_fields('socials');
                         выбранный Вами дизайн оформления.
                     </div>
                     <div class="premium-page--picture premium-page--picture-aluminium" id="premium-profile">
-                        <div class="premium-page--navigator first-navigator">+</div>
-                        <div class="premium-page--navigator second-navigator">+</div>
-                        <div class="premium-page--navigator third-navigator">+</div>
-                        <div class="premium-page--navigator forth-navigator">+</div>
+                        <div class="premium-page--navigator first-navigator">
+                            <span>+</span>
+                        </div>
+                        <div class="premium-page--navigator second-navigator">
+                            <span>+</span>
+                        </div>
+                        <div class="premium-page--navigator third-navigator">
+                            <span>+</span>
+                        </div>
+                        <div class="premium-page--navigator forth-navigator">
+                            <span>+</span>
+                        </div>
                     </div>
 
                     <div class="navigator-popup first-popup">
-                        <section class="popup-close-btn">x</section>
+                        <!-- <section class="popup-close-btn">x</section> -->
                         <div>
                             Почти незаметные, гладкие уплотнители из синтетического каучука (ЭПДМ): лёгкие в уходе, устойчивые
                             к выцветанию и с большим сроком службы (в отличие от силикона, как альтернативы, который желтеет и
@@ -281,7 +289,7 @@ $socials = allvipi_get_fields('socials');
                         <div onclick="showModal()">Хочу также</div>
                     </div>
                     <div class="navigator-popup second-popup">
-                        <section class="popup-close-btn">x</section>
+                        <!-- <section class="popup-close-btn">x</section> -->
                         <div>
                             Более энергоэффективный двухкамерный стеклопакет имеет теплоизоляционную вставку собственной
                             разработки, специальное заполнение газом, двухстороннее невидимое покрытие и термически
@@ -290,7 +298,7 @@ $socials = allvipi_get_fields('socials');
                         <div onclick="showModal()">Хочу также</div>
                     </div>
                     <div class="navigator-popup third-popup">
-                        <section class="popup-close-btn">x</section>
+                        <!-- <section class="popup-close-btn">x</section> -->
                         <div>
                             Термически разделённые спейсеры в стеклопакете - это улучшенное энергосбережение, больше комфорта
                             вблизи окна и значительно меньше конденсата в холодные месяцы
@@ -298,7 +306,7 @@ $socials = allvipi_get_fields('socials');
                         <div onclick="showModal()">Хочу также</div>
                     </div>
                     <div class="navigator-popup forth-popup">
-                        <section class="popup-close-btn">x</section>
+                        <!-- <section class="popup-close-btn">x</section> -->
                         <div>Очень изящный профиль - меньше рамы, больше стекла, больше света</div>
                         <div onclick="showModal()">Хочу также</div>
                     </div>
@@ -311,7 +319,7 @@ $socials = allvipi_get_fields('socials');
                 </div>
 
                 <div class="mobile-navigator-popup">
-                    <section class="popup-close-btn">x</section>
+                    <!-- <section class="popup-close-btn">x</section> -->
                     <div>
                         Почти незаметные, гладкие уплотнители из синтетического каучука (ЭПДМ): лёгкие в уходе, устойчивые
                         к выцветанию и с большим сроком службы (в отличие от силикона, как альтернативы, который желтеет и
@@ -320,7 +328,7 @@ $socials = allvipi_get_fields('socials');
                     <div onclick="showModal()">Хочу также</div>
                 </div>
                 <div class="mobile-navigator-popup">
-                    <section class="popup-close-btn">x</section>
+                    <!-- <section class="popup-close-btn">x</section> -->
                     <div>
                         Более энергоэффективный двухкамерный стеклопакет имеет теплоизоляционную вставку собственной
                         разработки, специальное заполнение газом, двухстороннее невидимое покрытие и термически
@@ -329,7 +337,7 @@ $socials = allvipi_get_fields('socials');
                     <div onclick="showModal()">Хочу также</div>
                 </div>
                 <div class="mobile-navigator-popup">
-                    <section class="popup-close-btn">x</section>
+                    <!-- <section class="popup-close-btn">x</section> -->
                     <div>
                         Термически разделённые спейсеры в стеклопакете - это улучшенное энергосбережение, больше комфорта
                         вблизи окна и значительно меньше конденсата в холодные месяцы
@@ -337,7 +345,7 @@ $socials = allvipi_get_fields('socials');
                     <div onclick="showModal()">Хочу также</div>
                 </div>
                 <div class="mobile-navigator-popup">
-                    <section class="popup-close-btn">x</section>
+                    <!-- <section class="popup-close-btn">x</section> -->
                     <div>Очень изящный профиль - меньше рамы, больше стекла, больше света</div>
                     <div onclick="showModal()">Хочу также</div>
                 </div>

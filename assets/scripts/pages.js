@@ -104,6 +104,7 @@ $(document).ready(function () {
         $(".first-popup, .second-popup, .third-popup, .forth-popup, .first-block, .second-block").fadeOut()
     })
 
+    //main start
     $(".main-page-navigator--first").mouseover(function () {
         $(".first-block").fadeIn()
     })
@@ -119,21 +120,58 @@ $(document).ready(function () {
     $(".main-page-navigator--second").mouseout(function () {
         $(".second-block").fadeOut()
     })
+    //main end
 
-    $(".first-navigator").mouseover(function () {
-        $(".first-popup").fadeIn()
+    var firstNavigatorShow = false
+    $(".first-navigator").click(function () {
+        if (firstNavigatorShow) {
+            $(".first-popup").fadeOut()
+            $(".first-navigator>span").hide().html("+").fadeIn()
+        } else {
+            $(".first-popup").fadeIn()
+            $(".first-navigator>span").hide().html("-").fadeIn()
+        }
+
+        firstNavigatorShow = !firstNavigatorShow
     })
 
-    $(".second-navigator").mouseover(function () {
-        $(".second-popup").fadeIn()
+    var secondNavigatorShow = false
+    $(".second-navigator").click(function () {
+        if (secondNavigatorShow) {
+            $(".second-popup").fadeOut()
+            $(".second-navigator>span").hide().html("+").fadeIn()
+        } else {
+            $(".second-popup").fadeIn()
+            $(".second-navigator>span").hide().html("-").fadeIn()
+        }
+
+        secondNavigatorShow = !secondNavigatorShow
     })
 
-    $(".third-navigator").mouseover(function () {
-        $(".third-popup").fadeIn()
+    var thirdNavigatorShow = false
+    $(".third-navigator").click(function () {
+        if (thirdNavigatorShow) {
+            $(".third-popup").fadeOut()
+            $(".third-navigator>span").hide().html("+").fadeIn()
+        } else {
+            $(".third-popup").fadeIn()
+            $(".third-navigator>span").hide().html("-").fadeIn()
+        }
+
+        thirdNavigatorShow = !thirdNavigatorShow
     })
 
-    $(".forth-navigator").mouseover(function () {
-        $(".forth-popup").fadeIn()
+    var forthNavigatorShow = false
+    $(".forth-navigator").click(function () {
+        if (forthNavigatorShow) {
+            $(".forth-popup").fadeOut()
+            $(".forth-navigator>span").hide().html("+").fadeIn()
+        } else {
+            $(".forth-popup").fadeIn()
+            $(".forth-navigator>span").hide().html("-").fadeIn()
+        }
+
+        forthNavigatorShow = !forthNavigatorShow
     })
 
     $("#calculate-doors").click(function () {
