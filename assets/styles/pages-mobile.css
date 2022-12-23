@@ -220,4 +220,10 @@
     .employee-data {
         justify-content: center;
     }
+
+    .btn-fixed {
+        transform: rotate(90deg);
+        right: 0;
+        left: unset;
+    }
 }

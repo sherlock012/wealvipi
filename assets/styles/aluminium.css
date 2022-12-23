@@ -1,5 +1,6 @@
 :root {
     --main: #ffc327;
+    --wood: #e76f00;
 }
 
 body::after {
@@ -34,4 +35,8 @@ body::after {
 
 .first-popup {
     right: -5%;
+}
+
+.btn-themed {
+    background-color: var(--wood);
 }

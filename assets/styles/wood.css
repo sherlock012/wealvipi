@@ -1,5 +1,6 @@
 :root {
     --main: #e76f00;
+    --aluminium: #ffc327;
 }
 
 body::after {
@@ -20,4 +21,8 @@ body::after {
 }
 .calculate-parallel {
     background: no-repeat center center url("../images/wood/calculate-parallel.jpeg");
+}
+
+.btn-themed {
+    background-color: var(--aluminium);
 }

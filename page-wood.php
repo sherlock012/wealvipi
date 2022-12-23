@@ -52,16 +52,20 @@ $socials = allvipi_get_fields('socials');
 
 <body>
     <main>
+        <button class="btn btn-fixed btn-themed" onclick="window.location.href='/aluminium'">Алюминий</button>
         <div class="main-page main-wood" id="main-page">
             <nav class="container navigation">
                 <div class="logo"></div>
 
                 <div class="contacts" id="contacts">
                     <div class="icon phone"></div>
-                    <a href="tel:+7 777 384 01 25">+7 777 384 01 25</a>
                 </div>
 
                 <div class="contacts contacts-addon">
+                    <div class="inner">
+                        <div class="icon phone"></div>
+                        <a href="tel:+7 777 384 01 25">+7 777 384 01 25</a>
+                    </div>
                     <div class="inner">
                         <div class="icon phone"></div>
                         <a href="tel:+7 771 718 46 75">+7 771 718 46 75</a>
