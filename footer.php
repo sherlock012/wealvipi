@@ -6,26 +6,39 @@
     }
 
     $(document).ready(function() {
+        $(".video").on('ended', function() {
+            this.load();
+            this.play();
+        });
+
+        $(".bg-video_wood").bgVideo()
         $(".bg-video").bgVideo()
-        $(".bg-video_2").bgVideo()
 
         $(".left-content").hide()
-        $(".bg-video_2").hide()
+        $(".bg-video_wood").hide()
 
         $(".jquery-background-video-pauseplay").hide()
 
         $(".right").hover(function() {
             $(".right-content").fadeIn()
             $(".left-content").fadeOut()
+
             $(".bg-video").fadeIn(500)
-            $(".bg-video_2").fadeOut(500)
+            $(".bg-video_wood").fadeOut(500)
+
+            // $(".main-wrapper").addClass("main-wrapper-aluminium")
+            // $(".main-wrapper").removeClass("main-wrapper-wood")
         })
 
         $(".left").hover(function() {
             $(".left-content").fadeIn()
             $(".right-content").fadeOut()
-            $(".bg-video_2").fadeIn(500)
+
+            $(".bg-video_wood").fadeIn(500)
             $(".bg-video").fadeOut(500)
+
+            // $(".main-wrapper").addClass("main-wrapper-wood")
+            // $(".main-wrapper").removeClass("main-wrapper-aluminium")
         })
 
         $("#wood").click(function() {

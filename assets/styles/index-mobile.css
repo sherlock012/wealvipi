@@ -68,7 +68,7 @@
     .mobile-background > .wood {
         height: 50vh;
         background-image: linear-gradient(180deg, rgba(22, 9, 11, 0.5) 30.44%, rgba(204, 98, 0, 0.5) 100%),
-            url("../images/wood/main.png");
+            url("../images/wood/main-min.png");
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -76,7 +76,7 @@
     .mobile-background > .aluminium {
         height: 50vh;
         background: linear-gradient(180deg, rgba(22, 9, 11, 0.5) 30.44%, rgba(204, 98, 0, 0.5) 100%),
-            url("../images/aluminium/main.jpg");
+            url("../images/aluminium/main-min.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

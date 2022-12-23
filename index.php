@@ -11,12 +11,12 @@ else
 ?>
 
 <main class="main-wrapper jquery-background-video-wrapper">
-    <video class="bg-video jquery-background-video mobile-hide" loop autoplay muted playsinline>
-        <source src="<?= get_template_directory_uri() ?>/assets/video/windows-site.mp4" type="video/mp4" loop="loop" />
+    <video class="bg-video jquery-background-video mobile-hide" loop autoplay muted playsinline poster="<?= get_template_directory_uri() ?>/assets/images/aluminium/main-min.jpg">
+        <source class=".video" src="<?= get_template_directory_uri() ?>/assets/video/windows-site.mp4" type="video/mp4" loop="loop" />
     </video>
 
-    <video class="bg-video_2 jquery-background-video mobile-hide" loop autoplay muted playsinline>
-        <source src="<?= get_template_directory_uri() ?>/assets/video/wood.mov" loop="loop" />
+    <video class="bg-video_wood jquery-background-video mobile-hide" loop autoplay muted playsinline poster="<?= get_template_directory_uri() ?>/assets/images/wood/main-min.png">
+        <source class=".video" src="<?= get_template_directory_uri() ?>/assets/video/wood.mov" loop="loop" />
     </video>
 
     <div class="mobile-background">
@@ -30,24 +30,21 @@ else
             <div class="logo"></div>
             <div class="contacts-wrapper">
                 <div class="contacts" id="contacts">
-                    <!-- <div class="whatsapp-icon"></div> -->
                     <div class="phone">
                         <div class="icon"></div>
-                        <a href="tel:+7 777 384 01 25">+7 777 384 01 25</a>
                     </div>
                 </div>
 
                 <div class="contacts contacts-addon">
                     <div class="phone inner">
                         <div class="icon"></div>
+                        <a href="tel:+7 777 384 01 25">+7 777 384 01 25</a>
+                    </div>
+                    <div class="phone inner">
+                        <div class="icon"></div>
                         <a href="tel:+7 771 718 46 75">+7 771 718 46 75</a>
                     </div>
 
-                    <!-- <div class="socials">
-                            <div class="icon instagram"></div>
-                            <div class="icon telegram"></div>
-                            <div class="icon youtube"></div>
-                        </div> -->
                     <div class="socials">
                         <?php foreach ($socials as $social) : ?>
                             <div onclick="openSocial('<?= $social['link'] ?>')" class="icon" style="background-image: url('<?= $social['icon'] ?>')"></div>
@@ -82,14 +79,6 @@ else
                 </div>
             </aside>
         </section>
-
-        <!-- <footer class="container container--bottom">
-            <div class="socials">
-                <div class="icon instagram"></div>
-                <div class="icon vk"></div>
-                <div class="icon telegram"></div>
-            </div>
-        </footer> -->
     </section>
 </main>
 <?php get_footer(); ?>
