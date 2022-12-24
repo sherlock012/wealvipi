@@ -223,7 +223,7 @@ $socials = allvipi_get_fields('socials');
                 <div class="advantage-grid--item">
                     <div class="grid-item--header">
                         <div class="grid-item--icon advantage-icons-4"></div>
-                        Разнообразие видовобработки профилей
+                        Разнообразие видов обработки профилей
                     </div>
                     <div class="grid-item--text">
                         Внутренняя и внешняя части оконных рам могут быть окрашены в любой из цветов по шкале RAL. Возможны
@@ -414,7 +414,7 @@ $socials = allvipi_get_fields('socials');
                         </div>
                         <div class="calculate-total--item">
                             <div class="__total">Доставка:</div>
-                            <div class="__price">0 KZT</div>
+                            <div class="__price">0</div>
                         </div>
                     </div>
                 </div>

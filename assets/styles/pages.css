@@ -85,10 +85,10 @@ main {
 }
 
 .main-wood {
-    background-image: linear-gradient(90deg, #1e1d1d 32.46%, rgba(0, 0, 0, 0) 100%), url("../images/wood/main.png");
+    background-image: linear-gradient(90deg, #1e1d1d 32.46%, rgba(0, 0, 0, 0) 100%), url("../images/wood/main-min.png");
 }
 .main-aluminium {
-    background-image: linear-gradient(90deg, #1e1d1d 32.46%, rgba(0, 0, 0, 0) 100%), url("../images/aluminium/main.jpg");
+    background-image: linear-gradient(90deg, #1e1d1d 32.46%, rgba(0, 0, 0, 0) 100%), url("../images/aluminium/main-min.jpg");
 }
 
 .navigation {
