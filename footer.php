@@ -11,11 +11,11 @@
             this.play();
         });
 
-        $(".bg-video_wood").bgVideo()
+        $(".bg-video_aluminium").bgVideo()
         $(".bg-video").bgVideo()
 
         $(".left-content").hide()
-        $(".bg-video_wood").hide()
+        $(".bg-video_aluminium").hide()
 
         $(".jquery-background-video-pauseplay").hide()
 
@@ -24,7 +24,7 @@
             $(".left-content").fadeOut()
 
             $(".bg-video").fadeIn(500)
-            $(".bg-video_wood").fadeOut(500)
+            $(".bg-video_aluminium").fadeOut(500)
 
             // $(".main-wrapper").addClass("main-wrapper-aluminium")
             // $(".main-wrapper").removeClass("main-wrapper-wood")
@@ -34,7 +34,7 @@
             $(".left-content").fadeIn()
             $(".right-content").fadeOut()
 
-            $(".bg-video_wood").fadeIn(500)
+            $(".bg-video_aluminium").fadeIn(500)
             $(".bg-video").fadeOut(500)
 
             // $(".main-wrapper").addClass("main-wrapper-wood")

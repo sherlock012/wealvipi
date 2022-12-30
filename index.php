@@ -11,17 +11,18 @@ else
 ?>
 
 <main class="main-wrapper jquery-background-video-wrapper">
-    <video class="bg-video jquery-background-video mobile-hide" loop autoplay muted playsinline poster="<?= get_template_directory_uri() ?>/assets/images/aluminium/main-min.jpg">
-        <source class=".video" src="<?= get_template_directory_uri() ?>/assets/video/windows-site.mp4" type="video/mp4" loop="loop" />
-    </video>
-
-    <video class="bg-video_wood jquery-background-video mobile-hide" loop autoplay muted playsinline poster="<?= get_template_directory_uri() ?>/assets/images/wood/main-min.png">
+    <video class="bg-video jquery-background-video mobile-hide" loop autoplay muted playsinline poster="<?= get_template_directory_uri() ?>/assets/images/wood/main-min.png">
         <source class=".video" src="<?= get_template_directory_uri() ?>/assets/video/wood.mov" loop="loop" />
     </video>
 
+    <video class="bg-video_aluminium jquery-background-video mobile-hide" loop autoplay muted playsinline poster="<?= get_template_directory_uri() ?>/assets/images/aluminium/main-min.jpg">
+        <source class=".video" src="<?= get_template_directory_uri() ?>/assets/video/windows-site.mp4" type="video/mp4" loop="loop" />
+    </video>
+
+
     <div class="mobile-background">
-        <div class="aluminium"></div>
         <div class="wood"></div>
+        <div class="aluminium"></div>
     </div>
 
     <section class="page-wrapper">
@@ -56,18 +57,6 @@ else
         <section class="container main-container">
             <aside class="right">
                 <div class="right-content">
-                    <div class="header">АЛЮМИНИЕВЫЕ ОКНА</div>
-                    <div class="caption">
-                        Алюминиевые окна <br />
-                        подходят для остекления проемов<br />
-                        различной ширины и конфигурации
-                    </div>
-                    <div class="line"></div>
-                    <button class="main-button" id="aluminium">Перейти на сайт</button>
-                </div>
-            </aside>
-            <aside class="left">
-                <div class="left-content">
                     <div class="header">ДЕРЕВЯННЫЕ ОКНА</div>
                     <div class="caption">
                         Деревянные окна <br />
@@ -76,6 +65,18 @@ else
                     </div>
                     <div class="line"></div>
                     <button class="main-button" id="wood">Перейти на сайт</button>
+                </div>
+            </aside>
+            <aside class="left">
+                <div class="left-content">
+                    <div class="header">АЛЮМИНИЕВЫЕ ОКНА</div>
+                    <div class="caption">
+                        Алюминиевые окна <br />
+                        подходят для остекления проемов<br />
+                        различной ширины и конфигурации
+                    </div>
+                    <div class="line"></div>
+                    <button class="main-button" id="aluminium">Перейти на сайт</button>
                 </div>
             </aside>
         </section>

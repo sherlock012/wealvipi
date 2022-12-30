@@ -100,11 +100,11 @@ main {
 }
 
 .navigation .logo {
-    width: 4.5rem;
-    height: 7rem;
-    /* background: no-repeat center url(../images/logo/logo.svg); */
-    background: no-repeat center url(../images/logo/logo.png);
-    background-size: cover;
+    width: 12rem;
+    height: 4rem;
+    background: no-repeat center url(../images/logo/logo1.svg);
+    /* background: no-repeat center url(../images/logo/logo.png); */
+    background-size: contain;
 }
 
 .navigation .contacts {
@@ -1488,7 +1488,7 @@ input[type="checkbox"] {
     transform: rotate(270deg);
     position: fixed;
     bottom: 20%;
-    left: 0;
+    right: 0;
     z-index: 10000;
-    padding: 0.5rem 1rem;
+    padding: 0.9rem 1.5rem;
 }
