@@ -360,7 +360,7 @@ $socials = allvipi_get_fields('socials');
 
         <div class="default-page calculate-page" data-aos="fade-in" id="fifth-page">
             <div class="container header">
-                Расчитайте остекление под свой дом
+                Рассчитайте остекление под свой дом
                 <div class="underline"></div>
             </div>
 
