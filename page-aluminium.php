@@ -546,7 +546,7 @@ $socials = allvipi_get_fields('socials');
                         <div class="footer-container--content upper">
                             +7 777 384 01 25 — НОМЕР<br />
                             ТЕЛЕФОНА ДЛЯ МЕССЕНДЖЕРОВ <br /><br /><br />
-                            ALVIPI@GMAIL.COM
+                            we.alvipi@gmail.com
                         </div>
 
                         <div class="footer-container--header ind-solutions upper">Индивидуальные решения</div>
