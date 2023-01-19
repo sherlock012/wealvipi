@@ -1,15 +1,15 @@
 function fGetDoorsPrice() {
-    var doorsPrice = 235000
+    var doorsPrice = 180000
     return doorsPrice
 }
 
 function fGetWindowsPrice() {
-    var windowsPrice = 190000
+    var windowsPrice = 150000
     return windowsPrice
 }
 
 function fGetParallelPrice() {
-    var parallelPrice = 280000
+    var parallelPrice = 220000
     return parallelPrice
 }
 
